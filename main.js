@@ -6,5 +6,15 @@ let app = new Vue({
             "fare la spesa",
             "lavare la macchina"
         ]
-    }
+    },
+    // methods: {
+    //     keymonitor: function(event){
+    //         if(event.key == "Enter"){
+    //             valoreInput==""
+    //         }
+    //         else{
+
+    //         }
+    //     }
+    // }
 })
