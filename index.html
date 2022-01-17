@@ -9,7 +9,8 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" v-model="valoreInput" @keyup.enter="lista.push(valoreInput);valoreInput=''">
+        <input type="text" v-model="valoreInput">
+        <button @click="lista.push(valoreInput);valoreInput=''">Aggiungi</button>
         <div v-for="elemento in lista">{{elemento}}</div>
 
     </div>
