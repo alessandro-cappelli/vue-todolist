@@ -3,18 +3,24 @@ let app = new Vue({
     data:{
         valoreInput:"",
         lista:[
-            "fare la spesa",
-            "lavare la macchina"
+            {
+                text: "fare la spesa",
+                done: false
+            },
+            {
+                text: "lavare la macchina",
+                done: false
+            },
+            
+            
         ]
     },
-    // methods: {
-    //     keymonitor: function(event){
-    //         if(event.key == "Enter"){
-    //             valoreInput==""
-    //         }
-    //         else{
-
-    //         }
-    //     }
-    // }
+    methods: {
+        addTodo: function(){                    //funxione bottone per aggiungere una array
+            console.log('aggiungi todo');
+        }
+    },
+    delTodo: function(index){                   //funzione per eliminare todo
+        this.lista.splice(index,1);
+    }
 })
